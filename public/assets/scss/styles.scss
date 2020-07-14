@@ -1,4 +1,38 @@
-body {
-    background-color: #222222;
-    color: white;
+// Base Imports
+@import "variables/fonts";
+@import "variables/colors";
+@import "helpers/mixins";
+
+// Components
+@import "header";
+@import "content";
+@import "footer";
+
+// Basic Layout
+html {
+    font-size: 16px;
+    font-family: $default-font;
+
+    body {
+        margin: 0;
+        background-image: url("../img/CarbonTexturePattern.jpg");
+        background-color: $dark;
+        color: $light;
+
+        a {
+            color: #9acd32;
+
+            &:hover {
+                color: #83af2c;
+            }
+
+            &:visited {
+                color: #b9e267;
+            }
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
 }
