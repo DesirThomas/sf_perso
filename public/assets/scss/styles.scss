@@ -20,14 +20,18 @@ html {
         color: $light;
 
         a {
-            color: #9acd32;
+            color: $a;
 
             &:hover {
-                color: #83af2c;
+                color: $a-hover;
             }
 
             &:visited {
-                color: #b9e267;
+                color: $a-visited;
+
+                &:hover {
+                    color: $a-hover;
+                }
             }
         }
 
